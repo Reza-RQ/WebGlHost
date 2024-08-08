@@ -95,8 +95,9 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
         var browserWidth = window.innerWidth;
         var browserHeight = window.innerHeight;
-        canvas.style.width = browserWidth;//"360px";
-        canvas.style.height = browserHeight;//"640px";
+        // Set the CSS size of the canvas (affects how it displays in the DOM)
+        canvas.style.width = browserWidth + "px";
+        canvas.style.height = browserHeight + "px";
       }
 
       loadingBar.style.display = "block";
